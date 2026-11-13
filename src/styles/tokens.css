@@ -1,0 +1,55 @@
+/* ---------------------------------------------------------------
+   Design tokens. Change the brand here and it changes everywhere.
+   --------------------------------------------------------------- */
+:root{
+  /* brand */
+  --green:#0B3C26;
+  --green-deep:#072718;
+  --green-soft:#125435;
+  --frost:#F4F7F6;
+  --ice:#E3EAE7;
+  --walnut:#5C4033;
+  --walnut-light:#8A6A4F;
+  --kernel:#D8C3A5;
+  --brass:#E3A82B;       /* saffron gold */
+  --crocus:#7A4DB8;
+
+  /* semantic surfaces (light) */
+  --bg:var(--frost);
+  --surface:#FFFFFF;
+  --surface-2:var(--ice);
+  --ink:var(--walnut);
+  --ink-strong:#2E1F18;
+  --line:rgba(11,60,38,.14);
+  --line-strong:rgba(11,60,38,.3);
+  --danger:#B3261E;
+
+  /* type */
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --measure:66ch;
+
+  /* space + shape */
+  --pad:clamp(20px,5vw,72px);
+  --r-soft:4px;
+  --z-header:60;
+  --z-scrim:70;
+  --z-drawer:80;
+  --z-modal:90;
+  --z-toast:100;
+}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#08281A; --surface:#0D3524; --surface-2:#0A2E1F;
+    --ink:#DCE7E1; --ink-strong:#F4F7F6;
+    --line:rgba(216,195,165,.2); --line-strong:rgba(216,195,165,.4);
+    --danger:#FFB4AB;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#08281A; --surface:#0D3524; --surface-2:#0A2E1F;
+  --ink:#DCE7E1; --ink-strong:#F4F7F6;
+  --line:rgba(216,195,165,.2); --line-strong:rgba(216,195,165,.4);
+  --danger:#FFB4AB;
+}

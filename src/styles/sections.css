@@ -1,0 +1,40 @@
+/* orchard story */
+.story{background:var(--green);color:var(--frost)}
+.story .section{display:grid;gap:clamp(34px,5vw,70px);grid-template-columns:1fr}
+@media(min-width:900px){.story .section{grid-template-columns:1.05fr .95fr;align-items:center}}
+.story h2{color:var(--frost);font-size:clamp(29px,4.2vw,46px)}
+.story p{color:rgba(244,247,246,.78);font-weight:300;margin-top:20px;max-width:48ch}
+.pillars{display:grid;gap:1px;background:rgba(244,247,246,.16);border:1px solid rgba(244,247,246,.16)}
+@media(min-width:520px){.pillars{grid-template-columns:1fr 1fr}}
+.pillar{background:var(--green);padding:26px 24px}
+.pillar b{display:block;font-family:var(--serif);font-size:20px;font-weight:500;color:var(--kernel);margin-bottom:7px}
+.pillar span{font-size:14px;font-weight:300;color:rgba(244,247,246,.74);line-height:1.6}
+
+/* founder note */
+.founder{max-width:var(--measure);margin:0 auto;text-align:center;display:grid;gap:22px}
+.founder blockquote{margin:0;font-family:var(--serif);font-size:clamp(21px,3vw,31px);font-style:italic;line-height:1.4;color:var(--ink-strong)}
+.founder cite{font-style:normal;font-size:13px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+
+/* footer */
+footer{background:var(--green-deep);color:rgba(244,247,246,.66);padding:60px var(--pad) 40px;font-size:14px}
+.foot-in{max-width:1320px;margin:0 auto;display:grid;gap:26px}
+@media(min-width:760px){.foot-in{grid-template-columns:1.4fr 1fr 1fr;gap:44px}}
+footer b{color:var(--frost);font-family:var(--serif);font-size:20px;font-weight:500;display:block;margin-bottom:10px}
+footer .foot-h{font-family:var(--sans);font-size:15px;letter-spacing:.04em}
+footer a{color:inherit;text-decoration:none;display:block;padding:3px 0}
+footer a:hover{color:var(--kernel)}
+.foot-note{max-width:1320px;margin:44px auto 0;padding-top:20px;border-top:1px solid rgba(244,247,246,.14);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12.5px}
+.heart{color:var(--kernel)}
+
+/* "how to spot real kesar" */
+.how{background:var(--surface-2)}
+.how-grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:820px){.how-grid{grid-template-columns:repeat(3,1fr)}}
+.how-card{background:var(--surface);padding:clamp(24px,3vw,36px);display:grid;gap:12px;align-content:start}
+.how-n{font-family:var(--serif);font-size:15px;letter-spacing:.14em;color:var(--brass)}
+.how-card h3{font-size:22px}
+.how-card p{font-size:15px;font-weight:300;opacity:.88}
+
+/* walnut "coming soon" section + nav pill */
+.soon-section .sec-head h2 em{font-style:italic;color:var(--brass)}
+.soon-pill{font-style:normal;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--brass);color:#0B3C26;padding:2px 7px;margin-left:5px;vertical-align:2px;border-radius:999px}

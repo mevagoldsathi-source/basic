@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  functions = "server/netlify/functions"
+
+# If you switch to a Vite build, use:
+# [build]
+#   command = "npm run build"
+#   publish = "dist"
+#   functions = "server/netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
